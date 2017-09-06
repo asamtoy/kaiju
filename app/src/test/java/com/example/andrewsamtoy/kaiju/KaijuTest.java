@@ -13,11 +13,16 @@ public class KaijuTest {
 
     Cat cat;
     Kangaroo kangaroo;
+    Jeep jeep;
+    Hummer hummer;
 
     @Before
     public void before(){
         cat = new Cat();
         kangaroo = new Kangaroo();
+        jeep = new Jeep();
+        hummer = new Hummer();
+
 
     }
 
@@ -52,5 +57,18 @@ public class KaijuTest {
     }
 
     @Test
-    public void
+    public void jeepHasType(){
+        assertEquals("Jeep", jeep.getType());
+
+    }
+
+    @Test
+    public void jeepHasArmor(){
+        assertEquals(50, jeep.getArmor());
+    }
+
+    @Test
+    public void hummerHasType(){
+        assertEquals("Hummer", hummer.getType());
+    }
 }

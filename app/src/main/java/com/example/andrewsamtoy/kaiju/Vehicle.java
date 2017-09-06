@@ -7,10 +7,10 @@ package com.example.andrewsamtoy.kaiju;
 public abstract class Vehicle {
 
     String type;
-    int healthValue;
+    int armor;
 
-    public Vehicle(String type, int healthValue){
+    public Vehicle(String type, int armor){
         this.type = type;
-        this.healthValue = healthValue;
+        this.armor = armor;
     }
 }
