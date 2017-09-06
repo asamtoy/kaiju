@@ -4,7 +4,7 @@ package com.example.andrewsamtoy.kaiju;
  * Created by andrewsamtoy on 9/6/17.
  */
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Damageable {
 
     String type;
     int armor;
@@ -19,7 +19,11 @@ public abstract class Vehicle {
     public int getAttackValue(){
         return this.attackValue;
     }
-    public void takeDamage(int attackValue){
-        this.armor -= attackValue;
+    public void damage(int damageTaken){
+        this.armor -= this.attackValue;
+    }
+
+    public void takeDamage(int attackValue) {
+        this.armor -= this.attackValue;
     }
 }

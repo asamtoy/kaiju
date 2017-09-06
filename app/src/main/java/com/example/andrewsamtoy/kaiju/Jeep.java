@@ -7,7 +7,7 @@ package com.example.andrewsamtoy.kaiju;
 public class Jeep
     extends Vehicle {
     public Jeep() {
-        super("Jeep", 50);
+        super("Jeep", 50, 5);
     }
     public String getType(){
         return type;

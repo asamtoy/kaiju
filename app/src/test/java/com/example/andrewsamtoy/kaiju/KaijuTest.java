@@ -81,4 +81,9 @@ public class KaijuTest {
     public void kangarooHasRoar(){
         assertEquals("BOUNCE", kangaroo.roar());
     }
+
+    public void canDamageVehicles(){
+        cat.attack(hummer);
+        assertEquals(999, hummer.getArmor());
+    }
 }
