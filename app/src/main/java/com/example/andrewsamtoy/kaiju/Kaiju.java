@@ -19,7 +19,8 @@ public abstract class Kaiju {
     public abstract String roar();
 
     public void attack(Vehicle vehicle){
-        vehicle.takeDamage(this.attackValue);
+        vehicle.damage(this.attackValue);
     }
 
+    public abstract String move();
 }

@@ -23,7 +23,6 @@ public class KaijuTest {
         jeep = new Jeep();
         hummer = new Hummer();
 
-
     }
 
     @Test
@@ -82,8 +81,19 @@ public class KaijuTest {
         assertEquals("BOUNCE", kangaroo.roar());
     }
 
+    @Test
     public void canDamageVehicles(){
         cat.attack(hummer);
-        assertEquals(999, hummer.getArmor());
+        assertEquals(299, hummer.getArmor());
+    }
+
+    @Test
+    public void kangarooCanMove(){
+        assertEquals("This kangaroo bounces.", kangaroo.move());
+    }
+
+    @Test
+    public void catCanMove(){
+        assertEquals("The cat finds the warm sunny patch.", cat.move());
     }
 }

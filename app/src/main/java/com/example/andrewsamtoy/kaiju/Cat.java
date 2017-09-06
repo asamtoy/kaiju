@@ -28,7 +28,10 @@ public class Cat
         return "Meow";
     }
 
-//    public String getRoar() {
-//        return "Meow";
-//    }
+    @Override
+    public String move() {
+        return "The cat finds the warm sunny patch.";
+    }
+
+
 }

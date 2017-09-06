@@ -27,4 +27,9 @@ public class Kangaroo
     public String roar() {
         return "BOUNCE";
     }
+
+    @Override
+    public String move() {
+        return "This kangaroo bounces.";
+    }
 }

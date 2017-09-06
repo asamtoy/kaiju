@@ -19,11 +19,8 @@ public abstract class Vehicle implements Damageable {
     public int getAttackValue(){
         return this.attackValue;
     }
-    public void damage(int damageTaken){
-        this.armor -= this.attackValue;
-    }
 
-    public void takeDamage(int attackValue) {
-        this.armor -= this.attackValue;
+    public void damage(int attackValue) {
+        this.armor -= attackValue;
     }
 }
