@@ -25,6 +25,6 @@ public class Kangaroo
 
     @Override
     public String roar() {
-        return null;
+        return "BOUNCE";
     }
 }

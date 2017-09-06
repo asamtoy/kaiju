@@ -5,4 +5,5 @@ package com.example.andrewsamtoy.kaiju;
  */
 
 public interface Attack {
+    int attackArmy();
 }

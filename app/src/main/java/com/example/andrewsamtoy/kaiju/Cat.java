@@ -25,6 +25,10 @@ public class Cat
 
     @Override
     public String roar() {
-        return null;
+        return "Meow";
     }
+
+//    public String getRoar() {
+//        return "Meow";
+//    }
 }

@@ -71,4 +71,14 @@ public class KaijuTest {
     public void hummerHasType(){
         assertEquals("Hummer", hummer.getType());
     }
+
+    @Test
+    public void catHasRoar(){
+        assertEquals("Meow", cat.roar());
+    }
+
+    @Test
+    public void kangarooHasRoar(){
+        assertEquals("BOUNCE", kangaroo.roar());
+    }
 }
